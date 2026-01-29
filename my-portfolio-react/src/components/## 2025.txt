@@ -1,0 +1,29 @@
+## 2025
+#### A galaxy you can feel, not just see.
+[live link
+
+
+                        live link](https://portfolio-25-phi.vercel.app/)
+
+## description
+#### AstraRise was my first step into the world of creative web experiments, and also my first recognized work on Awwwards. I wanted to build something that felt alive, something that breathes when you interact with it. That's how AstraRise was born — a digital galaxy that reacts, moves, and shifts with every touch. The site lets you explore space through motion — twist the colors, adjust the density of stars, and shape your own universe in real time. It's built using Three.js for 3D visualization, GSAP for animation, and Tailwind CSS for a clean, fluid design. AstraRise isn't just a visual experiment; it's a personal milestone — the project that taught me how imagination can become recognition.
+
+## tech Stack
+#### HTML
+
+#### Tailwind CSS
+
+#### GSAP
+
+#### Three.js
+
+## highlights
+#### Interactive control panel for real-time galaxy customization
+
+#### 3D motion and space simulation built using Three.js
+
+#### Seamless animations powered by GSAP
+
+## Portfolio'25
+[Resume
+                Resume](https://portfolio-25-phi.vercel.app/SwarajSingh%20Resume%20-%20NIT%20Goa%20%283%29.pdf)
