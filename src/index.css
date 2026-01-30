@@ -113,6 +113,7 @@ body {
     inset: 0;
     background: var(--bg-primary);
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     z-index: 10000;
@@ -128,7 +129,10 @@ body {
     font-family: var(--font-heading);
     font-size: clamp(3rem, 10vw, 8rem);
     letter-spacing: 0.3em;
+    margin-right: -0.3em;
+    /* Compensate for trailing spacing to center perfectly */
     animation: fadeIn 1s;
+    text-align: center;
 }
 
 .loader-line {
@@ -1326,26 +1330,36 @@ spline-viewer {
 
     /* Fix Text Visibility on Mobile */
     .hero-info {
-        background: rgba(0, 0, 0, 0.5);
-        backdrop-filter: blur(10px);
-        -webkit-backdrop-filter: blur(10px);
+        background: rgba(0, 0, 0, 0.9);
+        backdrop-filter: blur(15px);
+        -webkit-backdrop-filter: blur(15px);
         border-radius: 24px;
-        padding: 30px !important;
+        padding: 40px 30px !important;
         margin: 0 15px;
-        border: 1px solid rgba(255, 255, 255, 0.1);
-        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+        border: 1px solid rgba(255, 255, 255, 0.15);
+        box-shadow: 0 10px 40px rgba(0, 0, 0, 0.6);
+        z-index: 20;
+        position: relative;
     }
 
     .hero-description {
         color: #ffffff;
-        text-shadow: 0 2px 4px rgba(0, 0, 0, 0.8);
         font-weight: 500;
-        margin-bottom: 20px;
+        margin-bottom: 25px;
+        font-size: 1.05rem;
+        line-height: 1.8;
     }
 
     .hero-tagline {
         color: #ffffff;
-        text-shadow: 0 2px 10px rgba(0, 0, 0, 0.8);
+        font-weight: 700;
+        letter-spacing: 0.05em;
+    }
+
+    .hero-title {
+        text-shadow: 0 4px 20px rgba(0, 0, 0, 0.9);
+        z-index: 20;
+        position: relative;
     }
 }
 
