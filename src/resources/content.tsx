@@ -1,10 +1,10 @@
-import { About, Blog, Gallery, Home, Newsletter, Person, Social, Work } from "@/types";
+import type { About, Blog, Gallery, Home, Newsletter, Person, Social, Work } from "@/types";
 import { Line, Row, Text } from "@once-ui-system/core";
 
 const person: Person = {
   firstName: "Emunot Sharma",
   lastName: "Emmanuel",
-  name: `Emunot Sharma Emmanuel`,
+  name: "Emunot Sharma Emmanuel",
   role: "Creative Designer & IT Specialist",
   avatar: "/images/avatar.jpg",
   email: "ermunotsharma@gmail.com",
@@ -14,8 +14,8 @@ const person: Person = {
 
 const newsletter: Newsletter = {
   display: true,
-  title: <>Subscribe to {person.firstName}'s Newsletter</>,
-  description: <>My weekly newsletter about creativity and technology</>,
+  title: `Subscribe to ${person.firstName}'s Newsletter`,
+  description: "My weekly newsletter about creativity and technology",
 };
 
 const social: Social = [
@@ -45,7 +45,7 @@ const home: Home = {
   label: "Home",
   title: `${person.name}'s Portfolio`,
   description: `Portfolio website showcasing my work as a ${person.role}`,
-  headline: <>Move people, not just screens.</>,
+  headline: "Move people, not just screens.",
   featured: {
     display: true,
     title: (
@@ -86,12 +86,7 @@ const about: About = {
   intro: {
     display: true,
     title: "Introduction",
-    description: (
-      <>
-        Emunot Sharma Emmanuel is a Kampala-based Creative Designer & IT Specialist with 3 years of hands-on experience in Uganda's competitive 
-        graphics and technology sectors. He demonstrates strong leadership and problem-solving abilities with a commitment to delivering high-quality results.
-      </>
-    ),
+    description: "Emunot Sharma Emmanuel is a Kampala-based Creative Designer & IT Specialist with 3 years of hands-on experience in Uganda's competitive graphics and technology sectors. He demonstrates strong leadership and problem-solving abilities with a commitment to delivering high-quality results.",
   },
   work: {
     display: true,
@@ -102,15 +97,9 @@ const about: About = {
         timeframe: "Present",
         role: "Computer Programmer & Creative Designer",
         achievements: [
-          <>
-            Designed and executed creative motion graphics and visual assets using Adobe Creative Suite and CapCut.
-          </>,
-          <>
-            Managed social media content scheduling and analyzed engagement data using Meta Business Suite.
-          </>,
-          <>
-            Utilized AI analysis tools to improve design efficiency and data handling.
-          </>
+          "Designed and executed creative motion graphics and visual assets using Adobe Creative Suite and CapCut.",
+          "Managed social media content scheduling and analyzed engagement data using Meta Business Suite.",
+          "Utilized AI analysis tools to improve design efficiency and data handling.",
         ],
         images: [],
       },
@@ -119,12 +108,8 @@ const about: About = {
         timeframe: "Previous",
         role: "Graphics Designer & Printing",
         achievements: [
-          <>
-            Worked in a fast-paced environment handling high-volume graphics design and printing orders.
-          </>,
-          <>
-            Provided expert Microsoft Word and typesetting services for professional documents and academic papers.
-          </>
+          "Worked in a fast-paced environment handling high-volume graphics design and printing orders.",
+          "Provided expert Microsoft Word and typesetting services for professional documents and academic papers.",
         ],
         images: [],
       },
@@ -136,15 +121,15 @@ const about: About = {
     institutions: [
       {
         name: "Kyadondo Secondary School",
-        description: <>UACE - A Level.</>,
+        description: "UACE - A Level.",
       },
       {
         name: "Kawempe Muslim Secondary School",
-        description: <>UCE - O Level (Uganda Certificate of Education).</>,
+        description: "UCE - O Level (Uganda Certificate of Education).",
       },
       {
         name: "Tech Crunch Limited",
-        description: <>Certificate in Designing, WordPress & Programming.</>,
+        description: "Certificate in Designing, WordPress & Programming.",
       },
     ],
   },
@@ -154,9 +139,7 @@ const about: About = {
     skills: [
       {
         title: "Design & Media",
-        description: (
-          <>Expertise in Graphics Design, Motion Graphics, Video Editing, and Adobe Creative Suite.</>
-        ),
+        description: "Expertise in Graphics Design, Motion Graphics, Video Editing, and Adobe Creative Suite.",
         tags: [
           { name: "Graphics Design", icon: "figma" },
           { name: "Video Editing", icon: "play" },
@@ -165,9 +148,7 @@ const about: About = {
       },
       {
         title: "Tech & AI",
-        description: (
-          <>Proficient in AI Analysis, lightweight Computer Programming, and Web Design.</>
-        ),
+        description: "Proficient in AI Analysis, lightweight Computer Programming, and Web Design.",
         tags: [
           { name: "AI Analysis", icon: "plus" },
           { name: "Programming", icon: "code" },

@@ -27,8 +27,8 @@ export function Projects({ range, exclude }: ProjectsProps) {
     <Row fillWidth gap="xl" marginBottom="40" paddingX="l" wrap s={{ direction: "column", gap: "xl" }}>
       {displayedProjects.map((post, index) => (
         <Column
-          flex={0.5}
           key={post.slug}
+          style={{ flex: "0 0 50%" }}
           s={{ flex: 1 }}
         >
           <ProjectCard
