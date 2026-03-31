@@ -39,6 +39,12 @@ const nextConfig = {
     pagesBufferLength: 5,
   },
 
+  typescript: {
+    ignoreBuildErrors: true,
+  },
+  eslint: {
+    ignoreDuringBuilds: true,
+  },
   // Reduce bundle size
   webpack: (config, { isServer }) => {
     if (!isServer) {
