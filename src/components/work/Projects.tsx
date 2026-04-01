@@ -28,7 +28,7 @@ export function Projects({ range, exclude }: ProjectsProps) {
       {displayedProjects.map((post, index) => (
         <Column
           key={post.slug}
-          style={{ flex: "0 0 50%" }}
+          style={{ flex: 1, minWidth: "320px" }}
           s={{ flex: 1 }}
         >
           <ProjectCard
